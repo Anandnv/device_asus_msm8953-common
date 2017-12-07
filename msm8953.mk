@@ -717,5 +717,8 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
      persist.sys.usb.config=mtp,adb \
      ro.adb.secure=0
  
-
 PRODUCT_VENDOR_KERNEL_HEADERS := hardware/qcom/msm8996/kernel-headers
+
+# HIDL Hack
+ PRODUCT_PACKAGES += \
+     android.hidl.base@1.0
