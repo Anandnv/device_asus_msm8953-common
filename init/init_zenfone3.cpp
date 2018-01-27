@@ -49,24 +49,24 @@ void property_override(char const prop[], char const value[])
 void vendor_load_properties()
 {
     std::string project = android::base::GetProperty("ro.boot.id.prj","");
-    property_set("ro.product.name", "WW_Phone");
+    android::init::property_set("ro.product.name", "WW_Phone");
     if (project == "6") {
-        property_set("ro.build.product", "ZE520KL");
-        property_set("ro.build.description", "WW_Phone-user 7.0 NRD90M 14.2020.1703.28-20170410 release-keys");
-        property_set("ro.build.fingerprint", "asus/WW_Phone/ASUS_Z017D_1:7.0/NRD90M/14.2020.1703.28-20170410:user/release-keys");
-        property_set("ro.product.device", "ASUS_Z017D_1");
-        property_set("ro.product.model", "ASUS_Z017D");
-        property_set("ro.product.carrier", "US-ASUS_Z017D-WW_Phone");
-        property_set("ro.hardware.id", "ZE520KL_MP");
-        property_set("ro.build.csc.version", "WW_ZE520KL-14.2020.1703.28-20170410");
+        android::init::property_set("ro.build.product", "ZE520KL");
+        android::init::property_set("ro.build.description", "WW_Phone-user 7.0 NRD90M 14.2020.1703.28-20170410 release-keys");
+        android::init::property_set("ro.build.fingerprint", "asus/WW_Phone/ASUS_Z017D_1:7.0/NRD90M/14.2020.1703.28-20170410:user/release-keys");
+        android::init::property_set("ro.product.device", "ASUS_Z017D_1");
+        android::init::property_set("ro.product.model", "ASUS_Z017D");
+        android::init::property_set("ro.product.carrier", "US-ASUS_Z017D-WW_Phone");
+        android::init::property_set("ro.hardware.id", "ZE520KL_MP");
+        android::init::property_set("ro.build.csc.version", "WW_ZE520KL-14.2020.1703.28-20170410");
     } else if (project == "7") {
-        property_set("ro.build.product", "ZE552KL");
-        property_set("ro.build.description", "WW_Phone-user 7.0 NRD90M 14.2020.1703.28-20170410 release-keys");
-        property_set("ro.build.fingerprint", "asus/WW_Phone/ASUS_Z012D:7.0/NRD90M/14.2020.1703.28-20170410:user/release-keys");
-        property_set("ro.product.device", "ASUS_Z012D");
-        property_set("ro.product.model", "ASUS_Z012D");
-        property_set("ro.product.carrier", "US-ASUS_Z012D-WW_Phone");
-        property_set("ro.hardware.id", "ZE552KL_MP");
-        property_set("ro.build.csc.version", "WW_ZE552KL-14.2020.1703.28-20170410");
+        android::init::property_set("ro.build.product", "ZE552KL");
+        android::init::property_set("ro.build.description", "WW_Phone-user 7.0 NRD90M 14.2020.1703.28-20170410 release-keys");
+        android::init::property_set("ro.build.fingerprint", "asus/WW_Phone/ASUS_Z012D:7.0/NRD90M/14.2020.1703.28-20170410:user/release-keys");
+        android::init::property_set("ro.product.device", "ASUS_Z012D");
+        android::init::property_set("ro.product.model", "ASUS_Z012D");
+        android::init::property_set("ro.product.carrier", "US-ASUS_Z012D-WW_Phone");
+        android::init::property_set("ro.hardware.id", "ZE552KL_MP");
+        android::init::property_set("ro.build.csc.version", "WW_ZE552KL-14.2020.1703.28-20170410");
     }
 }
