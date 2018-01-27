@@ -58,7 +58,7 @@ on fs
     mount ext4 /dev/block/bootdevice/by-name/dsp /dsp ro nosuid nodev barrier=1
 
     wait /dev/block/bootdevice/by-name/modem
-    mount vfat /dev/block/bootdevice/by-name/modem /firmware ro context=u:object_r:firmware_file:s0,shortname=lower,uid=1000,gid=1000,dmask=226,fmask=333
+    mount vfat /dev/block/bootdevice/by-name/modem /firmware ro,shortname=lower,uid=1000,gid=1000,dmask=226,fmask=333
     #write /sys/kernel/boot_adsp/boot 1
 
     wait /dev/block/bootdevice/by-name/oem
